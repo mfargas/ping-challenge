@@ -1,24 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+
 body{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
     color: black;
-    display: grid;
+    font-family: 'Libre Franklin';
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
 .logo{
-    justify-self: center;
+    width: 10em;
+    margin: auto;
 }
 
 .intro-content{
     justify-self: center;
     text-align: center;
+    font-weight: 300;
 }
 
-.illustration {
-    width: 50vw;
-    justify-self: center;
+section{
+    display: flex;
+}
+
+section img{
+    width: 70vw;
+    justify-content: center;
+    margin: auto;
 }
 
 footer{
