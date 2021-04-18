@@ -5,7 +5,7 @@ body{
     height: 100vh;
     background-color: white;
     color: hsl(209, 33%, 12%);
-    font-family: 'Libre Franklin';
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
     font-size: 20px;
     display: flex;
@@ -36,10 +36,10 @@ body{
 }
 
 .headliner{
-    font-size: 15em;
+    font-size: 2em;
 }
 
-.intro-content p{
+.subscribe{
     font-size: 1em;
 }
 
@@ -78,7 +78,7 @@ section{
 }
 
 section img{
-    width: 80vw;
+    width: 80%;
     justify-content: center;
     margin: auto;
 }
@@ -98,6 +98,8 @@ footer{
 
     .email-component{
         flex-direction: column;
+        justify-content: center;
+        width: 80%;
     }
 
     input{
