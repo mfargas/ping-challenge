@@ -4,35 +4,108 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: white;
-    color: black;
+    color: hsl(209, 33%, 12%);
     font-family: 'Libre Franklin';
+    font-weight: 300;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0;
 }
 
+.header{
+    text-align: center;
+}
+
 .logo{
-    width: 10em;
+    width: 5em;
     margin: auto;
+    padding: 0.5em;
+    justify-items: center;
 }
 
 .intro-content{
     justify-self: center;
     text-align: center;
     font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    margin: auto;
+}
+
+.headliner{
+    font-size: 15em;
+}
+
+.intro-content p{
+    font-size: 1em;
+}
+
+input{
+    padding: 1em;
+    width: 15em;
+    border-radius: 25px;
+    border-width: 1px;
+}
+
+button{
+    padding: 1em;
+    width: 8em;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+button:hover{
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+
+.email-component{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
 section{
     display: flex;
+    height: 50%;
+    margin: auto;
 }
 
 section img{
-    width: 70vw;
+    width: 80vw;
     justify-content: center;
     margin: auto;
 }
 
 footer{
     text-align: center;
+    font-size: 0.5em;
+    bottom: 0;
 }
 
+
+@media screen and (max-width: 375px){
+
+    section img{
+        width: 100%;
+    }
+
+    .email-component{
+        flex-direction: column;
+    }
+
+    input{
+        margin: 1em;
+        width: 100%;
+    }
+    button{
+        margin: 1em;
+        width: 100%;
+    }
+}
