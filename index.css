@@ -16,10 +16,12 @@ body{
 
 .header{
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .logo{
-    width: 5em;
+    width: 4em;
     margin: auto;
     padding: 0.5em;
     justify-items: center;
@@ -37,6 +39,8 @@ body{
 
 .headliner{
     font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 .subscribe{
@@ -45,14 +49,14 @@ body{
 
 input{
     padding: 1em;
-    width: 15em;
+    width: 20em;
     border-radius: 25px;
     border-width: 1px;
 }
 
 button{
     padding: 1em;
-    width: 8em;
+    width: 12em;
     border-radius: 25px;
     border-width: 1px;
     background-color: hsl(223, 87%, 63%);
@@ -66,6 +70,9 @@ button:hover{
 
 .email-component{
     margin: auto;
+    margin-top: 1em;
+    width: 50%;
+    max-width: 700px;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -79,6 +86,7 @@ section{
 
 section img{
     width: 80%;
+    max-width: 700px;
     justify-content: center;
     margin: auto;
 }
@@ -94,6 +102,7 @@ footer{
 
     section img{
         width: 100%;
+        max-width: 90%;
     }
 
     .email-component{
