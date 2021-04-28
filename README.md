@@ -1,7 +1,5 @@
 # Frontend Mentor - Ping coming soon page solution
 
-This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -20,6 +18,8 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ![](./design/desktop-preview.jpg)
 
+This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
 
 ### The challenge
 
@@ -35,9 +35,7 @@ Users should be able to:
 ### Screenshot
 
 ![](https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ping-coming-soon-page/screencapture-marjoree-ping-coming-soon-page-netlify-app-2021-04-28-12_18_53.png)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
+![](https://s3-us-west-1.amazonaws.com/marjoree.e.f-images/projects/ping-coming-soon-page/screencapture-marjoree-ping-coming-soon-page-netlify-app-2021-04-28-12_19_38.png)
 
 ### Links
 
@@ -46,6 +44,7 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ## My process
 
+This is a project that allowed me to utilize my knowledge in HTML5 Semantic Markup and CSS concepts such as Mobile-first workflow using Flexbox.
 ### Built with
 
 - Semantic HTML5 markup
@@ -60,25 +59,35 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <header class="header">
+    <img class="logo" src="./images/logo.svg">
+    <section class="intro-content">
+      <p class="headliner">We are launching <strong>soon</strong>!</p>
+      <p class="subscribe">Subscribe and get notified</p>
+      <div class="email-component">
+        <input type="email" placeholder="example@email/com">
+        <button type="submit">Notify Me</button>
+      </div>
+    </section>
+  </header>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.email-component{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 375px){
+  .email-component{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
@@ -87,11 +96,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Marjoree E.F.](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Marjoree E.F.](https://www.marjoree.com)
+- Frontend Mentor - [@mfargas](https://www.frontendmentor.io/profile/mfargas)
 - Twitter - [@marjoree_js](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
