@@ -13,15 +13,15 @@
   
   <title>Ping Coming Soon Page</title>
 </head>
-<body>
+<body onload="document.header.section.email-component.email-form.focus()">
   <header class="header">
     <img class="logo" src="./images/logo.svg">
     <section class="intro-content">
-      <p class="headliner">We are launching <strong>soon</strong>!</p>
+      <p class="headliner">We are launching <strong>soon!</strong></p>
       <p class="subscribe">Subscribe and get notified</p>
       <div class="email-component">
-        <input type="email" placeholder="example@email/com">
-        <button type="submit">Notify Me</button>
+        <input name="email-form" type="email" placeholder="example@email/com">
+        <button name="submit" type="submit" onSubmit= "return validateEmail()" onclick="submitForm()">Notify Me</button>
       </div>
     </section>
   </header>

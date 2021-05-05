@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://marjoree-ping-coming-soon-page.netlify.app/)
-- Live Site URL: [Add live site URL here](https://marjoree-ping-coming-soon-page.netlify.app/)
+- Live Site URL: [https://marjoree-ping-coming-soon-page.netlify.app/](https://marjoree-ping-coming-soon-page.netlify.app/)
 
 ## My process
 
