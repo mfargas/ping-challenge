@@ -13,12 +13,12 @@
 </head>
 <body onload="document.header.section.email-component.email-form.focus()">
   <header class="header">
-    <img class="logo" src="./images/logo.svg">
+    <a href="/"><img class="logo" src="./images/logo.svg"></a>
     <section class="intro-content">
       <p class="headliner">We are launching <strong>soon!</strong></p>
       <p class="subscribe">Subscribe and get notified</p>
       <form class="email-component">
-        <input name="email-form" type="email" title="email@xxx.xxx)"  placeholder="example@email/com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+        <input name="email-form" type="email" title="email@xxx.xxx"  placeholder="example@email/com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
         <button name="submit" type="submit" value="submit" onSubmit= "return validateEmail()" onclick="submitForm()">Notify Me</button>
       </form>
     </section>
