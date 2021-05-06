@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="index.css">
 
   <script src="https://kit.fontawesome.com/5c1d927aa5.js" crossorigin="anonymous"></script>
-  
+
   <title>Ping Coming Soon Page</title>
 </head>
 <body onload="document.header.section.email-component.email-form.focus()">
@@ -17,10 +17,10 @@
     <section class="intro-content">
       <p class="headliner">We are launching <strong>soon!</strong></p>
       <p class="subscribe">Subscribe and get notified</p>
-      <div class="email-component">
-        <input name="email-form" type="email" placeholder="example@email/com">
-        <button name="submit" type="submit" onSubmit= "return validateEmail()" onclick="submitForm()">Notify Me</button>
-      </div>
+      <form class="email-component">
+        <input name="email-form" type="email" title="email@xxx.xxx)"  placeholder="example@email/com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+        <button name="submit" type="submit" value="submit" onSubmit= "return validateEmail()" onclick="submitForm()">Notify Me</button>
+      </form>
     </section>
   </header>
   <section>
