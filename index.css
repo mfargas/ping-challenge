@@ -66,7 +66,9 @@ button{
 
 button:hover{
     background-color: hsl(223, 100%, 88%);
+    border: none;
     cursor: pointer;
+    box-shadow: 0 3px 2px 2px hsl(223, 95%, 85%);
 }
 
 .email-component{
@@ -77,6 +79,10 @@ button:hover{
     justify-content: center;
     display: flex;
     flex-direction: row;
+}
+
+input[type='email']:focus{
+    border-radius: 25px;
 }
 
 section{
